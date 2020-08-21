@@ -11,7 +11,7 @@ public class CubePlayer : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         var movers = FindObjectsOfType<Mover>();
         var index = playerInput.playerIndex;
-        mover = movers.FirstOrDefault(m => m.GetPlayerIndex() == index);
+        //mover = movers.FirstOrDefault(m => m.GetPlayerIndex() == index);
     }
     public void OnMove(InputValue value)
     {
